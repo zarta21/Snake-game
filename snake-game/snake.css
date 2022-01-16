@@ -1,0 +1,62 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, span {
+    display: inline-block;
+    font-family: Verdana, sans-serif;
+    background-image: linear-gradient(to right, #7542f5, #f542b6);
+    color: transparent;
+    background-clip: text;
+
+}
+
+#canvas {
+    box-shadow: black 10px 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#start, #game-over {
+    font-family: Verdana, sans-serif;
+    color: magenta;
+    padding: 20px;
+    position: fixed;
+    display: inline-block;
+    height: 200px;
+    width: 270px;
+    text-align: center;
+}
+
+a  {
+    border: 3px solid magenta;
+    color: magenta;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    width: 250px;
+    text-align: center;
+    font-size: 1.3em;
+    display: inline-block;
+}
+
+a:hover {
+    color: black;
+    border: 3px solid black;
+    text-decoration: none;
+    background-color: magenta;
+    text-shadow: 0 0 0.45em white;
+    box-shadow: 0 0 0.5em 0.2em magenta;
+    font-weight: bold;
+
+}
