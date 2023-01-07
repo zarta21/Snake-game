@@ -51,7 +51,6 @@ class SnakePart{
     }
 }
 
-// game loop
 scoreEl.innerHTML = score;
 
 levelEasy.onclick = function() {
@@ -130,7 +129,6 @@ function gameOver() {
         return false;
     }
 
-    //walls
     if (gameMode == "Expert") {
         if (headX <= 0) {
             gameOver = true; 
@@ -193,9 +191,9 @@ function drawSnake() {
         ctx.closePath();
     }
 
-    snakeParts.push(new SnakePart(headX, headY)); // put the item to the end of the list
+    snakeParts.push(new SnakePart(headX, headY)); 
     while (snakeParts.length > tailLength){
-        snakeParts.shift(); // remove the furthers item from the snake parts.
+        snakeParts.shift(); 
     }
 
     ctx.fillStyle = "#16f530";
